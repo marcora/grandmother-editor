@@ -71,7 +71,7 @@ let params = [
     new Param(19, 'Sequence Transpose Mode', Options(['Relative to First Note', 'Relative to Middle C'], 0)),
     new Param(20, 'Arp/Seq Keyed Timing Reset', Options(['Off', 'On'], 1)),
     new Param(21, 'Arp FW/BW Repeats', Options(["Don't Repeat end notes", 'Repeat end notes'], 1)),
-    new Param(22, 'Arp/Seq Swing', Slider(0, 16383, 8192), "0 to 100% (50% = no swing)"),
+    new Param(22, 'Arp/Seq Swing', Slider(0, 16383, 8192), "0 to 100% (Default = 50%/no swing)"),
     new Param(23, 'Sequence Keyboard Control', Options(['Off', 'On'], 0)),
     new Param(24, 'Delay Sequence Change', Options(['Off', 'On'], 0)),
     new Param(25, 'Sequence Latch Restart', Options(['Off', 'On'], 1)),
@@ -96,5 +96,5 @@ let params = [
     new Param(44, 'Tap-Tempo Clock Division Persistence', Options(['Off', 'On'], 0)),
     new Param(45, 'KB CV OUT Range', Options(['-5V to +5V', '0V to 10V'], 0)),
     new Param(46, 'KB VEL OUT Range', Options(['-5V to +5V', '0V to 10V'], 0)),
-    new Param(47, 'Multi Trig Reset Speed', Slider(4, 50, 4), "4-50 milliseconds"),
+    new Param(47, 'Multi Trig Reset Speed', Slider(4, 50, 4), "4-50 milliseconds (Default = 4 ms)"),
 ];
