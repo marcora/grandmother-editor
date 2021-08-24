@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Moog Matriarch Global Settings Editor</title>
+    <title>Moog Grandmother Global Settings Editor</title>
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -41,15 +41,15 @@
 </head>
 
 <body>
-<h1>Matriarch Global Settings Editor</h1>
+<h1>Grandmother Global Settings Editor</h1>
 <p>
-    This is a settings editor for the <a href="https://www.moogmusic.com/products/matriarch">Moog Matriarch</a>
-    synthesizer. It uses the SysEx messages introduced in the v1.2.0 firmware update to read/write the settings.
-    Please refer to the Moog Matriarch
-    <a href="https://api.moogmusic.com/sites/default/files/2020-09/Matriarch_V1.2.0_Firmware_Notes.pdf">
-        v1.2.0 Firmware Notes PDF </a>
+    This is a settings editor for the <a href="https://www.moogmusic.com/products/Grandmother">Moog Grandmother</a>
+    synthesizer. It uses the SysEx messages introduced in the v1.1.0 firmware update to read/write the settings.
+    Please refer to the Moog Grandmother
+    <a href="https://api.moogmusic.com/sites/default/files/2020-09/Grandmother_V1.1.0_Firmware_Update_notes_0.pdf">
+        v1.1.0 (or later) Firmware Notes PDF </a>
     for more details.
-    The <a href="https://github.com/mreid/matriarch-editor">source code is available on GitHub</a> along
+    The <a href="https://github.com/marcora/grandmother-editor">source code is available on GitHub</a> along
     with more details.
     It is made available with no warranty or guarantees, and is in no way affiliated with Moog Music.
     <strong>Use at your own risk!</strong>.
@@ -65,10 +65,10 @@
     appropriate extensions.</li>
 </ul>
 <p>
-    When this page is loaded, the MIDI API will look for any MIDI In/Out devices with the word "Matriarch"
+    When this page is loaded, the MIDI API will look for any MIDI In/Out devices with the word "Grandmother"
     in their name and connect to the first of these that is found. Once connected, the global settings are
-    scanned. Each of the 74 settings in the table below will switch from a grey to white background if a
-    value is successfully read from the connected Matriarch.
+    scanned. Each of the 47 settings in the table below will switch from a grey to white background if a
+    value is successfully read from the connected Grandmother.
 </p>
 <p>
     Use the selection boxes or sliders to select a new value from the list. The factory defaults are indicated
@@ -78,10 +78,10 @@
 </p>
 <p>
     There are a number of parameters that de-facto resets to another default value than the officially
-    documented default value. They are marked in the list (this was found with firmware 1.2.3).
+    documented default value. They are marked in the list (this was found with firmware 1.1.3).
 </p>
 <p>
-    This editor was developed over a weekend by Mark Reid.
+    This editor is a modification of the Moog Matriarch Global Settings Editor developed over a weekend by Mark Reid.
     If you like it, please check out some of the music he has made using the Matriarch on
     <a href="https://twitter.com/mdreid">Twitter</a>,
     <a href="https://www.instagram.com/mdreid/">Instagram</a>,
@@ -89,13 +89,7 @@
     and <a href="https://soundcloud.com/mdreid-1">SoundCloud</a>.
 </p>
 <ul>
-    <li><em>2020-10-04</em>: Initial Release</li>
-    <li>
-        <em>2020-12-29</em>:
-        Better retries, highlighting of non-default settings, and update to 1.2.3 SysEx messages
-        <a href="https://github.com/mreid/matriarch-editor/pull/1">added</a> by
-        <a href="https://github.com/algesten">Martin Algesten</a>
-    </li>
+    <li><em>2021-08-24</em>: Initial Release</li>
 </ul>
 <hr/>
 <div id="midiEngineStatus">
