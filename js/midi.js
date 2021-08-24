@@ -9,8 +9,8 @@ var params_waiting = {};
 async function open_midi_out() {
     midi_out = undefined;
     $('#midiOutName').html('No Connection');
-    midi_out = JZZ({sysex:true}).openMidiOut(/Matriarch/)
-        .or(function(){ $('#midiOutName').html('Cannot find Matriarch!'); })
+    midi_out = JZZ({sysex:true}).openMidiOut(/Grandmother/)
+        .or(function(){ $('#midiOutName').html('Cannot find Grandmother!'); })
         .and(function(){ $('#midiOutName').html(this.name()); console.log(this.info()); });
     try {
         await midi_out;
@@ -24,8 +24,8 @@ async function open_midi_out() {
 async function open_midi_in() {
     midi_in = undefined;
     $('#midiInName').html('No Connection');
-    midi_in = JZZ({sysex:true}).openMidiIn(/Matriarch/)
-        .or(function(){ $('#midiInName').html('Cannot find Matriarch!'); })
+    midi_in = JZZ({sysex:true}).openMidiIn(/Grandmother/)
+        .or(function(){ $('#midiInName').html('Cannot find Grandmother!'); })
         .and(function(){ $('#midiInName').html(this.name()); console.log(this.info());})
         .connect(update_param);
     try {
