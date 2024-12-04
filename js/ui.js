@@ -13,8 +13,8 @@ function createTable(parameters) {
         el.update_defaultness = () => {
             const current_value = $(el).find('select,input').val();
             const default_value = $(el).find('select,input')[0].default_value;
-            console.log(param.id + ' default value: ' + default_value);
-            console.log(param.id + ' current value: ' + current_value);
+            console.log(' --default value: ' + default_value);
+            console.log(' --current value: ' + current_value);
             console.log('toggleClass', current_value != default_value);
            $(el).toggleClass('non_default', current_value != default_value);
         };
