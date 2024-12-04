@@ -75,8 +75,8 @@ let params = [
     new Param(23, 'Sequence Keyboard Control', Options(['Off', 'On'], 0)),
     new Param(24, 'Delay Sequence Change', Options(['Off', 'On'], 0)),
     new Param(25, 'Sequence Latch Restart', Options(['Off', 'On'], 1)),
-    new Param(26, 'Arp/Seq Clock Input Mode', Options(['Clock', 'Step-Advance Trigger'], 0)),
-    new Param(27, 'Arp/Seq Clock Output', Options(['Always', 'Only When Playing'], 1)),
+    new Param(26, 'Arp/Seq Clock Input Mode', Options(['Clock', 'Step-Advance Trigger'], 0)), 
+    new Param(27, 'Clock Output Mode', Options(['Always', 'Only When Playing'], 1)), //Arp/Seq Clock Output
     new Param(28, 'Arp MIDI Control Mode', Options(['Arp outputs MIDI notes, ignores incoming MIDI notes when local control is off', 'Arp doesn’t output MIDI notes, is controlled by incoming MIDI notes when local control is off'], 0)),
     new Param(29, 'MIDI Sync Out', Options(['Output MIDI Clock and Start/Stop', 'Output Clock but not Start/Stop', 'Don’t output MIDI Clock or Start/Stop'], 2)),
     new Param(30, 'MIDI Sync In', Options(['Follow MIDI Clock & Start/Stop', 'Follow Clock but ignore Start/Stop', 'Ignore MIDI Clock/Start/Stop'], 0)),
